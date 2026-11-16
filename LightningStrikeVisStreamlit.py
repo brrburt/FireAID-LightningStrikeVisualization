@@ -52,7 +52,7 @@ def load_data():
         return df
 
     lightning_df = load_lightning_data(Path('./Datasets/ImpactSystemLightning_Points_1986_2012_NAD83.geojson'))
-    fire_perimeters_df = load_geojson_data(Path('./Datasets/Datasets/AlaskaFireHistory_Polygons_AKAlbersNAD83_geojson.geojson'))
+    fire_perimeters_df = load_geojson_data(Path('./Datasets/AlaskaFireHistory_Polygons_AKAlbersNAD83_geojson.geojson'))
     fire_points_df = load_geojson_data(Path('./Datasets/AlaskaFireHistory_Points_NAD83_geojson.geojson'))
     
     return lightning_df, fire_perimeters_df, fire_points_df
